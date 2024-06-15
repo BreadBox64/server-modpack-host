@@ -1,0 +1,13 @@
+filename = 'modernfix-forge-5.18.0+mc1.19.2.jar'
+name = 'ModernFix'
+side = 'both'
+
+[download]
+hash = 'e66f9bd3f6513e0576234947fdfdd1bdf625560cb7418983a43487033aaacaa0e0e74cc31ac2c18a0245ec7fe8f9fcd0bc7a53ecb21b1970c767c96315800877'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/nmDcB62a/versions/i0vWRI7P/modernfix-forge-5.18.0%2Bmc1.19.2.jar'
+
+[update.modrinth]
+mod-id = 'nmDcB62a'
+version = 'i0vWRI7P'

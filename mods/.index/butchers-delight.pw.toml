@@ -1,0 +1,13 @@
+filename = 'Butchersdelight beta 1.19.2 2.1.0.jar'
+name = "Butcher's Delight"
+side = 'both'
+
+[download]
+hash = '368b7fd5a207bdb160529df4b53340b0f24e53dce41cb142e8c822b7d8a9c5533fb76c264f3a5d22539e085644f4250d31ecdd7ae057399fb7ca701c00dfecfe'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/B0xSlae0/versions/rM99ztQ9/Butchersdelight beta 1.19.2 2.1.0.jar'
+
+[update.modrinth]
+mod-id = 'B0xSlae0'
+version = 'rM99ztQ9'

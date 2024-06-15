@@ -1,0 +1,13 @@
+filename = 'chairsontrains-forge-1.19.2-1.0.0.jar'
+name = 'Create: Chairs on Trains'
+side = 'both'
+
+[download]
+hash = 'f5744f3dd692e9d069132751764c4e97228162dd89b8d657cda4c80e962ddfadbf461c6c26d297a0ec910767bca0c71d402a3e56bccc9dbd9f99a2243a21eb15'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Hh9wP732/versions/wM9PYoML/chairsontrains-forge-1.19.2-1.0.0.jar'
+
+[update.modrinth]
+mod-id = 'Hh9wP732'
+version = 'wM9PYoML'

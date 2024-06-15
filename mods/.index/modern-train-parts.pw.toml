@@ -1,0 +1,13 @@
+filename = 'moderntrainparts-mc1.19.2-0.2.2-forge.jar'
+name = 'Modern Train Parts'
+side = 'both'
+
+[download]
+hash = '5bc67ffdfa8c2e838fa3dca25aae503bbb16c847d3fe5ca28e43083cc647484cb3086f1b57e21ff921f63ee04d59e3bac2d953e588ce09c4dac322d1b622a55a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/YlOA6mdQ/versions/ow94GBOo/moderntrainparts-mc1.19.2-0.2.2-forge.jar'
+
+[update.modrinth]
+mod-id = 'YlOA6mdQ'
+version = 'ow94GBOo'

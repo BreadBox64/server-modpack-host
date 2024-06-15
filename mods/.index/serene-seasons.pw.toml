@@ -1,0 +1,13 @@
+filename = 'SereneSeasons-1.19.2-8.1.0.24.jar'
+name = 'Serene Seasons'
+side = 'both'
+
+[download]
+hash = '5b00d15fc8272db1a685ce35bf04b337e54d37d8b9d689de331f68b710862febd1612c33b571ae8658d71ee697759a3167262fce607231ef549105d9b0fac1a3'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/e0bNACJD/versions/O1v6mc2V/SereneSeasons-1.19.2-8.1.0.24.jar'
+
+[update.modrinth]
+mod-id = 'e0bNACJD'
+version = 'O1v6mc2V'

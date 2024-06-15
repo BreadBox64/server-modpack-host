@@ -1,0 +1,13 @@
+filename = 'effortlessbuilding-1.19.2-3.5-all.jar'
+name = 'Effortless Building'
+side = 'both'
+
+[download]
+hash = '410d26e880642a8444d11b477018cfad3c00e557d5863d0f6721e5e54bf60fbdab00400297510682752ec7a6bf274b83d701d4833333ba8ab5a273e52e02013b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/DYtfQEYj/versions/3NgntFbG/effortlessbuilding-1.19.2-3.5-all.jar'
+
+[update.modrinth]
+mod-id = 'DYtfQEYj'
+version = '3NgntFbG'

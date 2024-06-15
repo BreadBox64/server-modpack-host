@@ -1,0 +1,13 @@
+filename = 'neapolitan-1.19.2-4.1.0.jar'
+name = 'Neapolitan'
+side = 'both'
+
+[download]
+hash = '7342bf81fa5b521cb8788acf0a460e195242ee304c226f3f38fa8ff509d700032acacc9e654bd557248a6e6c03b5e85168718740daa676aa4f3cd5daebf14717'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/InYMuiQt/versions/8qmVV9M7/neapolitan-1.19.2-4.1.0.jar'
+
+[update.modrinth]
+mod-id = 'InYMuiQt'
+version = '8qmVV9M7'

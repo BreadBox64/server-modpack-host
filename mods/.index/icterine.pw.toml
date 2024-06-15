@@ -1,0 +1,13 @@
+filename = 'Icterine-forge-1.2.0.jar'
+name = 'Icterine'
+side = 'both'
+
+[download]
+hash = 'db79c621ae309c15f2558ef0b00318d87a69c7b971e2058188246a6a1100b7e45fea6d7d6997b8b1f7be1acb4fd564bce1373b6000e0fc0a3549cd7f37059ad8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/7RvRWn6p/versions/tMsh5MyG/Icterine-forge-1.2.0.jar'
+
+[update.modrinth]
+mod-id = '7RvRWn6p'
+version = 'tMsh5MyG'

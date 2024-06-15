@@ -1,0 +1,13 @@
+filename = 'Create_Ammo-1.19.2-0.6.0.jar'
+name = 'Create : Ammo'
+side = 'both'
+
+[download]
+hash = 'fab7a8ebf788f4c8912f4fb683c8ec56853a2cfa'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4953037
+project-id = 934721

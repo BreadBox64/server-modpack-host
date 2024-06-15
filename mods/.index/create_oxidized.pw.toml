@@ -1,0 +1,13 @@
+filename = 'create_oxidized-1.19.2-0.1.1.jar'
+name = 'Create: Oxidized'
+side = 'server'
+
+[download]
+hash = '4f66e5f2ccaf3959875f059450392defb653511555036fd3b316b2ad759fd541b9b0dba2c09fe2ec2d5bb62c6df96cc7a4cc1e466dba8a938b24e6715a3784b6'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/X9kjRZeX/versions/JHaJEgyv/create_oxidized-1.19.2-0.1.1.jar'
+
+[update.modrinth]
+mod-id = 'X9kjRZeX'
+version = 'JHaJEgyv'

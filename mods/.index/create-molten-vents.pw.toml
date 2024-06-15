@@ -1,0 +1,13 @@
+filename = 'molten_vents-1.19.2-2.0.6.jar'
+name = 'Create: Molten Vents'
+side = 'both'
+
+[download]
+hash = '406a8c0e05e724ddc8244f4f92bba3819cf1aa1bbaf8a7abc57de8da1092e451cf37b625155f7dea4253edf8e737ab6bd19d43aeeacd2ab8bd4c87299aa3ada8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/uuVy6k1s/versions/BcnWuM3e/molten_vents-1.19.2-2.0.6.jar'
+
+[update.modrinth]
+mod-id = 'uuVy6k1s'
+version = 'BcnWuM3e'

@@ -1,0 +1,13 @@
+filename = 'DungeonsArise-1.19.2-2.1.54-release.jar'
+name = 'When Dungeons Arise'
+side = 'server'
+
+[download]
+hash = '7971e7616640e2aca0f6ca1881b8c95e5c3e70d36005b489d3a6d0805d9680df8d5b409f9fc869506f1a7cc199ee2eb3ddbfd96d1d5394c24a61f410b84bbcc9'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/8DfbfASn/versions/v9V9LIbE/DungeonsArise-1.19.2-2.1.54-release.jar'
+
+[update.modrinth]
+mod-id = '8DfbfASn'
+version = 'v9V9LIbE'

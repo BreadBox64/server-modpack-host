@@ -1,0 +1,13 @@
+filename = 'another_furniture-forge-1.19.2-2.1.4.jar'
+name = 'Another Furniture'
+side = 'both'
+
+[download]
+hash = '743286648aedeb7476adb06426cc639ae628082b1149c21cf2ce7f1c9db50170a4334354ca488cf0078bfdda4bfbe2a693850b3cc2ccff5f4b651f31590fc97e'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ulloLmqG/versions/b6EO57JG/another_furniture-forge-1.19.2-2.1.4.jar'
+
+[update.modrinth]
+mod-id = 'ulloLmqG'
+version = 'b6EO57JG'

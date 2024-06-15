@@ -1,0 +1,13 @@
+filename = 'MyServerIsCompatible-1.19-1.0.jar'
+name = 'My Server Is Compatible'
+side = 'client'
+
+[download]
+hash = 'c0217bead05cbeb5def345eaefe019cab17cda9db926fcd5eed13bda4005391a2355de83d254f13cb2ec8e577ec0cc9d66350cca7c9491845c652b328a2cceee'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/13qq15Cg/versions/G5WstfSD/MyServerIsCompatible-1.19-1.0.jar'
+
+[update.modrinth]
+mod-id = '13qq15Cg'
+version = 'G5WstfSD'

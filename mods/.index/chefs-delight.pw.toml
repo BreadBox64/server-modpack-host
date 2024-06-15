@@ -1,0 +1,13 @@
+filename = 'chefs-delight-1.0.2-forge-1.19.2.jar'
+name = "Chef's Delight"
+side = 'both'
+
+[download]
+hash = 'de56c0c5eee884ee9105f7d931d377d73c558c306e0e742d3d2cd19bd22093b9c3ca183a12756b650b01df3b605c0fcd448359352d1c2b9f637d41ac063b3edb'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/pvcsfne4/versions/CwV7mj5e/chefs-delight-1.0.2-forge-1.19.2.jar'
+
+[update.modrinth]
+mod-id = 'pvcsfne4'
+version = 'CwV7mj5e'

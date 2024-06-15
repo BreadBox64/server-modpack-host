@@ -1,0 +1,13 @@
+filename = 'JustEnoughResources-1.19.2-1.2.3.243.jar'
+name = 'Just Enough Resources (JER)'
+side = 'client'
+
+[download]
+hash = 'e17033b0a6ccb333525f642a5de0c18aa0710f301b511f76b4e2601ef4f84bb04fdd59ed05c936ba7b6cf22486b2643e82a940503dba0288af6d0f9dc19dd79c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/uEfK2CXF/versions/gYpN3Xsx/JustEnoughResources-1.19.2-1.2.3.243.jar'
+
+[update.modrinth]
+mod-id = 'uEfK2CXF'
+version = 'gYpN3Xsx'

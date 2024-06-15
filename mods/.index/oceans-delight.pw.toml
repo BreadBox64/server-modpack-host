@@ -1,0 +1,13 @@
+filename = 'oceansdelight-1.0.2-1.19.2.jar'
+name = "Ocean's Delight"
+side = 'both'
+
+[download]
+hash = '7a8ada74aa16fdf7cf75f17ee05a00e16d2dea8b70c023e73fc4373c8acec26f4485a4409302129f14da1213c0a0c2a9e6cad20fa62ae94e7038161527621db9'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/DGiq4ZSW/versions/rClYLHGR/oceansdelight-1.0.2-1.19.2.jar'
+
+[update.modrinth]
+mod-id = 'DGiq4ZSW'
+version = 'rClYLHGR'

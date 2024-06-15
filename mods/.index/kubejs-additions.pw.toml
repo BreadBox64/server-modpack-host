@@ -1,0 +1,13 @@
+filename = 'kubejsadditions-forge-3.2.2.jar'
+name = 'KubeJS Additions'
+side = 'both'
+
+[download]
+hash = '8b15795b8b17f0cbc1ad6188e15a795a5c1d6f84ad77d8d005a59d7e3e50671b9ef9df0fa712d635daf623dc5c67d93ed5d6f6e28b35aa03dabea27a31cbd962'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/BZemjxZb/versions/Red8hzqq/kubejsadditions-forge-3.2.2.jar'
+
+[update.modrinth]
+mod-id = 'BZemjxZb'
+version = 'Red8hzqq'

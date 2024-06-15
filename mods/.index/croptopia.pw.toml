@@ -1,0 +1,13 @@
+filename = 'Croptopia-1.19.2-FORGE-2.2.2.jar'
+name = 'Croptopia'
+side = 'both'
+
+[download]
+hash = '9a43ff007309fda513f0f1ece184e49dca66c9d7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4344770
+project-id = 415438

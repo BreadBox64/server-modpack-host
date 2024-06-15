@@ -1,0 +1,13 @@
+filename = 'global_packs-forge-1.19.2-1.14.5_forge.jar'
+name = 'Global Packs'
+side = 'both'
+
+[download]
+hash = '9985d0bc6f7a842ce15e5d04eb1986f025f02e59'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4570532
+project-id = 317134

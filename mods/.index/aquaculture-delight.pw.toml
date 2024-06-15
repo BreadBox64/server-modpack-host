@@ -1,0 +1,13 @@
+filename = 'aquaculture_delight_1.0.0_forge_1.19.2.jar'
+name = "Aquaculture Delight (A Farmer's Delight Add-on)"
+side = 'both'
+
+[download]
+hash = '9cea0083f69aff39e38b137ebc609246f32a9053'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5035045
+project-id = 961988

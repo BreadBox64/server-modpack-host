@@ -1,0 +1,13 @@
+filename = 'FastWorkbench-1.19.2-7.1.4.jar'
+name = 'FastWorkbench'
+side = 'both'
+
+[download]
+hash = '92b819982fffa6a2c36ed2a76f5e68e164d7c7eb'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4643471
+project-id = 288885

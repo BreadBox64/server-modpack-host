@@ -1,0 +1,13 @@
+filename = 'supermartijn642corelib-1.1.17-forge-mc1.19.2.jar'
+name = "SuperMartijn642's Core Lib"
+side = 'both'
+
+[download]
+hash = '2199e2b0a3a8664aaa4a3cb2256928d94710007ec7bc753b3a51e28ed2f3449ffa2447417a873d29c2122aa3bec4870e4299502929cc31de5af2f4595eb0a269'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/rOUBggPv/versions/eFx7PTpi/supermartijn642corelib-1.1.17-forge-mc1.19.2.jar'
+
+[update.modrinth]
+mod-id = 'rOUBggPv'
+version = 'eFx7PTpi'

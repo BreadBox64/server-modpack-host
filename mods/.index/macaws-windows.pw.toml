@@ -1,0 +1,13 @@
+filename = 'mcw-windows-2.2.1-mc1.19.2forge.jar'
+name = "Macaw's Windows"
+side = 'both'
+
+[download]
+hash = '1ced4b282ea8a108ec4f9481df15516bf3341b2d4d0a66c73f935f07a450c5ce5025cff58c6ad7f611718ec9ad5ad9b86e2857bd0f5a66c9d0cfde8194b2425d'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/C7I0BCni/versions/CROTKkWW/mcw-windows-2.2.1-mc1.19.2forge.jar'
+
+[update.modrinth]
+mod-id = 'C7I0BCni'
+version = 'CROTKkWW'

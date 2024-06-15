@@ -1,0 +1,13 @@
+filename = 'blockui-1.19.2-1.0.140-BETA.jar'
+name = 'BlockUI'
+side = 'both'
+
+[download]
+hash = 'd82fe26e264497451a8b53be3120bc4498678a8f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5064909
+project-id = 522992

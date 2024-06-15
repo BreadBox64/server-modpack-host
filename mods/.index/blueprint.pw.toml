@@ -1,0 +1,13 @@
+filename = 'blueprint-1.19.2-6.2.0.jar'
+name = 'Blueprint'
+side = 'both'
+
+[download]
+hash = '97687a8a006c61c198fb15a3a6194625390b7e12d831b7026f376b797546fa60efef014f313fc9ac028c103fead85e496bef10d8f8dae226cf4ff6564b22d53b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/VsM5EDoI/versions/SnLXbWe9/blueprint-1.19.2-6.2.0.jar'
+
+[update.modrinth]
+mod-id = 'VsM5EDoI'
+version = 'SnLXbWe9'

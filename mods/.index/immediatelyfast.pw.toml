@@ -1,0 +1,13 @@
+filename = 'ImmediatelyFast-Forge-1.2.18+1.19.2.jar'
+name = 'ImmediatelyFast'
+side = 'both'
+
+[download]
+hash = 'defc2aaa203a387281d3b91e83681bcea1997aaa51fa0e2352c4280b3a450c333f7be0b5e517cdbde92b17fc3079543b62453c4e4fc4f322b281f6fa2ba60daf'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/5ZwdcRci/versions/qoAsDnt8/ImmediatelyFast-Forge-1.2.18%2B1.19.2.jar'
+
+[update.modrinth]
+mod-id = '5ZwdcRci'
+version = 'qoAsDnt8'

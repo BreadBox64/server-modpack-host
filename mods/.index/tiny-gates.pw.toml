@@ -1,0 +1,13 @@
+filename = 'tinygates-1.19.2-3.1.2.jar'
+name = 'Tiny Gates'
+side = 'both'
+
+[download]
+hash = 'e24b7efb3fc2a3f3f2e33310972d2cb71f86944e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4393790
+project-id = 522875

@@ -1,0 +1,13 @@
+filename = 'mcw-trapdoors-1.1.3-mc1.19.2forge.jar'
+name = "Macaw's Trapdoors"
+side = 'both'
+
+[download]
+hash = '52a564e2ae5ccd580d5dd40809d253722cfa597222bbf5714e4d5461905caee0c86fc8e0c4a7280d1e42e437aa245b674e4cd59bed781837f44f7bcf88682086'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/n2fvCDlM/versions/rMGScX31/mcw-trapdoors-1.1.3-mc1.19.2forge.jar'
+
+[update.modrinth]
+mod-id = 'n2fvCDlM'
+version = 'rMGScX31'

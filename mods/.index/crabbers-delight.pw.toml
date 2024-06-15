@@ -1,0 +1,13 @@
+filename = 'CrabbersDelight-1.19.2-1.1.4.jar'
+name = "Crabber's Delight"
+side = 'both'
+
+[download]
+hash = 'bf0fd1c0dad931447ba24a704db2ac979362b39077e52de633dac35a422ed163290ee5b91f0a99386f8204e980d15346dda4b7630f2301861482b460183d5376'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/gBGdVBJy/versions/q2lyova5/CrabbersDelight-1.19.2-1.1.4.jar'
+
+[update.modrinth]
+mod-id = 'gBGdVBJy'
+version = 'q2lyova5'
