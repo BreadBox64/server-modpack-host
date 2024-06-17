@@ -4,30 +4,42 @@ import shutil
 import fsspec
 from packaging.version import Version
 
+print("Starting modpackUpdateScript...")
+
 cwd = os.getcwd()
+if cwd[-4:] == "dist":
+	os.chdir("..")
+	cwd = os.getcwd()
+print(f"Running in directory '{cwd}'")
 fs = fsspec.filesystem("github", org="BreadBox64", repo="server-modpack-host")
 deltaObject = None
 reinstall = False
+onlyLatest = False
 try:
-	print(cwd + "\\modpackVersion.txt")
+	print("Fetching version information...")
 	fs.get("modpackVersion.txt", cwd + "\\newModpackVersion.txt")
-	currentVersion = Version(open(cwd + "\\modpackVersion.txt").read().strip('\n'))
-	newVersion = Version(open(cwd + "\\newModpackVersion.txt").read().strip('\n'))
+	newVersionString = open(cwd + "\\newModpackVersion.txt").read().rstrip()
+	currentVersionString = open(cwd + "\\modpackVersion.txt").read().rstrip()
+	newVersion = Version(newVersionString)
+	currentVersion = Version(currentVersionString)
 	print(f"Found local modpack version {currentVersion} and upstream version {newVersion}.")
 	if newVersion <= currentVersion:
 		print(f"Modpack version {currentVersion} is already updated to or past upstream version {newVersion}, cancelling install.\nIf you need to reinstall the pack, delete modpackVersion.txt")
-		input("Press any key to exit...")
+		os.remove(cwd + "\\newModpackVersion.txt")
+		input("Press enter to exit...")
 		exit()
 except OSError:
 	reinstallPrompt = True
 	while reinstallPrompt:
-		reinstallInput = input("No modpack version file found, should the installer reinstall the whole pack, [Y] or only apply the latest update? [N] ").strip()
+		reinstallInput = input("No modpack version file found, should the installer reinstall the whole pack, [Y] or only apply the latest update? [N] ").rstrip()
 		if reinstallInput == 'Y' or reinstallInput == 'y':
 			reinstall = True
 			reinstallPrompt = False
 		elif reinstallInput == 'N' or reinstallInput == 'n':
 			reinstall = False
 			reinstallPrompt = False
+			currentVersionString = newVersionString
+			onlyLatest = True
 		else:
 			print("Invalid input.")
 		
@@ -35,39 +47,45 @@ if reinstall:
 	deltaList = ["*kubejs", "*mods", "*resourcepacks", "*shaderpacks", "*texturepacks", "-servers.dat", "+servers.dat"]
 else:
 	fs.get("modpackDelta.txt", cwd + "\\modpackDelta.txt")
+	currentVersionString = f"!{currentVersionString}"
 	deltaObject = open(cwd+"\\modpackDelta.txt")
 	deltaList = []
 	deltaRead = True
 	deltaAlign = 0
 	while deltaRead:
-		line = deltaObject.readline()
-		if deltaAlign == 1:
-			deltaList.append(line)
-		elif deltaAlign == 0:
-			if line == f"!{str(currentVersion)}":
-				deltaAlign = 2
+		line = deltaObject.readline().rstrip()
+		if line == "":
+			deltaRead = False
 		else:
-			if line[0] == '!':
-				deltaAlign = 1
-
-	deltaString = f"\n{deltaObject.read()}\n"
-	deltaObject.seek(0, os.SEEK_SET)
+			if deltaAlign == 1:
+				deltaList.append(line)
+			elif deltaAlign == 0:
+				if line == currentVersionString:
+					if onlyLatest:
+						deltaAlign = 1
+						deltaList.append(line)
+					else:
+						deltaAlign = 2
+			else:
+				if line[0] == '!':
+					deltaAlign = 1
+					deltaList.append(line)
 
 	continuePrompt = True
 	while continuePrompt:
-		continueInput = input(f"Delta lookup returned the following update delta: {deltaString}Continue with update? [Y/N] ").strip()
+		continueInput = input(f"Delta lookup returned the following update delta: \n{str(deltaList)}\nContinue with update? [Y/N] ").rstrip()
 		if continueInput == 'Y' or continueInput == 'y':
 			print("Continuing with install.")
 			continuePrompt = False
 		elif continueInput == 'N' or continueInput == 'n':
 			print("Cancelling install.")
-			input("Press any key to exit...")
+			input("Press enter to exit...")
 			exit()
 		else:
 			print("Invalid input.")
 
 for delta in deltaList:
-	print(f"Handling delta '{delta}'")
+	print(f" Handling delta '{delta}'")
 	deltaType = delta[0]
 	fileName = delta[1:]
 	fileLoc = cwd + '//' + fileName.replace('/', '\\')
@@ -78,6 +96,14 @@ for delta in deltaList:
 	elif deltaType == '*':
 		shutil.rmtree(fileLoc)
 		fs.get(fileName, fileLoc, recursive=True)
+	elif deltaType == '!':
+		print(f"Applying updates for version {fileName}.")
 
+print("Finalizing update...")
+try:
+	os.remove(cwd + "\\modpackVersion.txt")
+except FileNotFoundError:
+	pass
+os.rename(cwd + "\\newModpackVersion.txt", cwd + "\\modpackVersion.txt")
 print("Update completed.")
-input("Press any key to exit...")
+input("Press enter to exit...")
