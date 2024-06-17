@@ -44,7 +44,7 @@ except OSError:
 			print("Invalid input.")
 		
 if reinstall:
-	deltaList = ["*kubejs", "*mods", "*resourcepacks", "*shaderpacks", "*texturepacks", "-servers.dat", "+servers.dat"]
+	deltaList = ["*kubejs", "*mods", "*resourcepacks", "*shaderpacks", "-servers.dat", "+servers.dat"]
 else:
 	fs.get("modpackDelta.txt", cwd + "\\modpackDelta.txt")
 	currentVersionString = f"!{currentVersionString}"
@@ -94,7 +94,10 @@ for delta in deltaList:
 	elif deltaType == '-':
 		os.remove(fileLoc)
 	elif deltaType == '*':
-		shutil.rmtree(fileLoc)
+		try:
+			shutil.rmtree(fileLoc)
+		except FileNotFoundError:
+			pass
 		fs.get(fileName, fileLoc, recursive=True)
 	elif deltaType == '!':
 		print(f"Applying updates for version {fileName}.")
@@ -102,6 +105,7 @@ for delta in deltaList:
 print("Finalizing update...")
 try:
 	os.remove(cwd + "\\modpackVersion.txt")
+	os.remove(cwd + "\\modpackDelta.txt")
 except FileNotFoundError:
 	pass
 os.rename(cwd + "\\newModpackVersion.txt", cwd + "\\modpackVersion.txt")
