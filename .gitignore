@@ -2,9 +2,11 @@
 .physics_mod_cache/
 .vscode/
 blueprints/
+build/
 config/
 coremods/
 defaultconfigs/
+dist/
 essential/
 global_packs/
 lightspeed-cache/
@@ -20,6 +22,7 @@ server-resource-packs
 Xaero*/
 .qmenu_opened.marker
 icon.png
+newModpackVersion.txt
 options.tt
 rhino.local.properties
 servers.dat_old

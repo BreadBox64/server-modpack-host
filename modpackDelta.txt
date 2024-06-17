@@ -1,1 +1,4 @@
+!2.2.0
+*kubejs
+!2.3.0
 +stupid.txt
