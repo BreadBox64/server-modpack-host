@@ -1,5 +1,17 @@
 !0.0.0
 !2.2.0
 *kubejs
+-mods\minecolonies-1.19.2-1.1.516-BETA
++mods\minecolonies-1.19.2-1.1.584-BETA
+-mods\elytraslot-forge-6.1.1+1.19.2
++mods\elytraslot-forge-6.1.2+1.19.2
+-mods\Copycats-forge.1.19.2-1.2.5
++mods\Copycats-forge.1.19.2-1.3.1
+-mods\ImmediatelyFast-Forge-1.2.17+1.19.2
++mods\ImmediatelyFast-Forge-1.2.18+1.19.2
+-mods\Xaeros_Minimap_24.1.1_Forge_1.19.1
++mods\Xaeros_Minimap_24.2.0_Forge_1.19.1
+-mods\XaerosWorldMap_1.38.4_Forge_1.19.1
++mods\XaerosWorldMap_1.38.4_Forge_1.19.1
 !2.3.0
 +stupid.txt
