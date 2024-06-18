@@ -19,4 +19,4 @@
 +mods\Captcha-1.19.2-2.3.0.jar
 +updaterIcon.ico
 +dist\selfUpdate.exe
-&dist\modpackUpdateScript.exe
++dist\newmodpackUpdateScript.exe
