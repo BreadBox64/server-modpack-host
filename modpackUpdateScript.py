@@ -114,10 +114,15 @@ for delta in deltaList:
 
 print("Finalizing update...")
 try:
-	os.remove(cwd + "\\modpackDelta.txt")
 	os.remove(cwd + "\\modpackVersion.txt")
 	os.rename(cwd + "\\newModpackVersion.txt", cwd + "\\modpackVersion.txt")
 except FileNotFoundError:
+	pass
+except PermissionError:
+	pass
+try:
+	os.remove(cwd + "\\modpackDelta.txt")
+except PermissionError:
 	pass
 
 print("Update completed.")
