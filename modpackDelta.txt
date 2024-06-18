@@ -28,3 +28,4 @@
 -resourcepacks/Xray_Ultimate_1.29.2_v5.0.0.zip
 -options.txt
 +options.txt
+&dist/modpackUpdateScript.exe
