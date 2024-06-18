@@ -2,6 +2,7 @@ import os
 from sys import exit
 import shutil
 import fsspec
+import subprocess
 from packaging.version import Version
 
 print("Starting modpackUpdateScript...")
@@ -11,10 +12,14 @@ if cwd[-4:] == "dist":
 	os.chdir("..")
 	cwd = os.getcwd()
 print(f"Running in directory '{cwd}'")
+
 fs = fsspec.filesystem("github", org="BreadBox64", repo="server-modpack-host")
 deltaObject = None
+selfUpdate = False
+selfUpdatedFiles = []
 reinstall = False
 onlyLatest = False
+
 try:
 	print("Fetching version information...")
 	fs.get("modpackVersion.txt", cwd + "\\newModpackVersion.txt")
@@ -88,26 +93,37 @@ for delta in deltaList:
 	print(f" Handling delta '{delta}'")
 	deltaType = delta[0]
 	fileName = delta[1:]
-	fileLoc = cwd + '//' + fileName.replace('/', '\\')
-	if deltaType == '+':
-		fs.get(fileName, fileLoc)
-	elif deltaType == '-':
-		os.remove(fileLoc)
-	elif deltaType == '*':
-		try:
-			shutil.rmtree(fileLoc)
-		except FileNotFoundError:
-			pass
-		fs.get(fileName, fileLoc, recursive=True)
-	elif deltaType == '!':
-		print(f"Applying updates for version {fileName}.")
+	fileLoc = cwd + '\\' + fileName.replace('/', '\\')
+	match deltaType:
+		case '+':
+			fs.get(fileName, fileLoc)
+		case '-':
+			os.remove(fileLoc)
+		case '*':
+			try:
+				shutil.rmtree(fileLoc)
+			except FileNotFoundError:
+				pass
+			fs.get(fileName, fileLoc, recursive=True)
+		case '!':
+			print(f"Applying updates for version {fileName}.")
+		case '&':
+			selfUpdate = True
+			fs.get(fileName, fileLoc + 'new')
+			selfUpdatedFiles.append(fileLoc)
 
 print("Finalizing update...")
 try:
-	os.remove(cwd + "\\modpackVersion.txt")
 	os.remove(cwd + "\\modpackDelta.txt")
+	os.remove(cwd + "\\modpackVersion.txt")
+	os.rename(cwd + "\\newModpackVersion.txt", cwd + "\\modpackVersion.txt")
 except FileNotFoundError:
 	pass
-os.rename(cwd + "\\newModpackVersion.txt", cwd + "\\modpackVersion.txt")
+
 print("Update completed.")
 input("Press enter to exit...")
+if selfUpdate:
+	selfUpdateFile = open(cwd + "\\selfUpdateDelta.txt", 'w')
+	selfUpdateFile.writelines(selfUpdatedFiles)
+	selfUpdateFile.close()
+	subprocess.call('start /wait .\\dist\\selfUpdate.exe', shell=True)

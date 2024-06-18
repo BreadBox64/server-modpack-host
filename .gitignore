@@ -6,7 +6,6 @@ build/
 config/
 coremods/
 defaultconfigs/
-dist/
 essential/
 global_packs/
 lightspeed-cache/

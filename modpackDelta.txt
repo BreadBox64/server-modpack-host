@@ -15,3 +15,8 @@
 +mods\XaerosWorldMap_1.38.4_Forge_1.19.1
 !2.3.0
 +stupid.txt
+!2.4.0
++mods\Captcha-1.19.2-2.3.0.jar
++updaterIcon.ico
++dist\selfUpdate.exe
+&dist\modpackUpdateScript.exe

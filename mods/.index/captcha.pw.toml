@@ -1,0 +1,13 @@
+filename = 'Captcha-1.19.2-2.3.0.jar'
+name = 'Captcha'
+side = 'both'
+
+[download]
+hash = '0b5bccae26ce04e724b8f9389fa73f520f7e6fc4196f3f7862692a7984a62d5f098aecf24b9f3e98202797e7bc8498e1e58daf5761eac3c1a1cfe816328d7cbf'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/e015SVoM/versions/OqkI3yJu/Captcha-1.19.2-2.3.0.jar'
+
+[update.modrinth]
+mod-id = 'e015SVoM'
+version = 'OqkI3yJu'
