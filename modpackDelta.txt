@@ -19,7 +19,6 @@
 +mods/Captcha-1.19.2-2.3.0.jar
 +updaterIcon.ico
 +dist/selfUpdate.exe
-+dist/newmodpackUpdateScript.exe
 !2.4.1
 -resourcepacks/PrismLauncher-Windows-MSVC-Setup-8.3.exe
 -resourcepacks/latest.log
@@ -28,4 +27,6 @@
 -resourcepacks/Xray_Ultimate_1.29.2_v5.0.0.zip
 -options.txt
 +options.txt
+&dist/modpackUpdateScript.exe
+!2.4.2
 &dist/modpackUpdateScript.exe

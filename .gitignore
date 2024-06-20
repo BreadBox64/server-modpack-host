@@ -5,6 +5,7 @@ blueprints/
 build/
 config/
 coremods/
+crash-reports/
 defaultconfigs/
 essential/
 global_packs/
