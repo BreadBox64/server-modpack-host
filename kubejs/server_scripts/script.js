@@ -1,4 +1,17 @@
 ServerEvents.recipes(event => {
+	event.shapeless('4x kubejs:iron_coin', 'kubejs:gold_coin')
+	event.shapeless('16x kubejs:iron_coin', 'kubejs:diamond_coin')
+	event.shapeless('64x kubejs:iron_coin', 'kubejs:netherite_coin')
+
+	event.shapeless('kubejs:gold_coin', '4x kubejs:iron_coin')
+	event.shapeless('4x kubejs:gold_coin', 'kubejs:diamond_coin')
+	event.shapeless('16x kubejs:gold_coin', 'kubejs:netherite_coin')
+
+	event.shapeless('kubejs:diamond_coin', '4x kubejs:gold_coin')
+	event.shapeless('4x kubejs:diamond_coin', 'kubejs:netherite_coin')
+
+	event.shapeless('kubejs:netherite_coin', '4x kubejs:diamond_coin')
+
 	event.remove({output: 'magistuarmory:steel_ingot'})
 	event.shapeless('9x kubejs:mold_ingot', 'createbigcannons:casting_sand')
 

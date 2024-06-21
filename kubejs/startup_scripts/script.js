@@ -9,4 +9,9 @@ StartupEvents.registry('item', event => {
 	event.create('track_kit_controller').displayName("Controller Track Kit").tooltip("Right click a track in world or craft with it to attach this kit to a rail.")
 
 	event.create('mold_ingot').displayName("Ingot Mold").tooltip("A mold filled with molten metal to forge ingots.")
+
+	event.create('iron_coin').displayName("1 Bannana-Buck Coin").fireResistant()
+	event.create('gold_coin').displayName("4 Bannana-Buck Coin").fireResistant()
+	event.create('diamond_coin').displayName("16 Bannana-Buck Coin").fireResistant()
+	event.create('netherite_coin').displayName("64 Bannana-Buck Coin").fireResistant()
 })

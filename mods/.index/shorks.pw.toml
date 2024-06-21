@@ -1,0 +1,13 @@
+filename = 'shorkmod-1.0-1.19.2.jar'
+name = 'Shorks'
+side = 'both'
+
+[download]
+hash = '775ba355417b1f66474e4a9f8b9f29500da28ad899cd1b97a7b8bed1245b5d57b9c6db44b6a370ca881dfbcca2c610ff4ba332ac18ec302da7e7734918a4966d'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ioagFVzF/versions/WoqiWAuQ/shorkmod-1.0-1.19.2.jar'
+
+[update.modrinth]
+mod-id = 'ioagFVzF'
+version = 'WoqiWAuQ'

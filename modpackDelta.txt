@@ -30,3 +30,6 @@
 &dist/modpackUpdateScript.exe
 !2.4.2
 &dist/modpackUpdateScript.exe
+!2.5.0
++mods/shorkmod-1.0-1.19.2.jar
+*kubejs
