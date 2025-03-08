@@ -1,0 +1,8 @@
+Nightly
+1.1.0-n38
+Beta
+1.1.0-b2
+Stable
+1.0.0
+Supported
+0.7.4
