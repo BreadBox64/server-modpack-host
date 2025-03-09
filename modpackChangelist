@@ -1,0 +1,25 @@
+0.11.0 -> 1.0.0
++ stupid mods/ false https://raw.githubusercontent.com/BreadBox64/server-modpack-host/refs/heads/main/stupid.txt `it tells you you're stupid`
+/ `test msg 1`
+0.9.0 -> 1.0.0
+- stupid mods/stupid.txt `no more old version`
+/ `test msg 2`
+0.7.4 -> 1.0.0
+* idk mods/random.txt 0-4 `line1` `line2` `line3` `line4` `line5` none `no url provided`
+/ `test msg 3`
+0.10.0 -> 0.11.0
+/ `test msg 4`
+0.9.0 -> 0.10.0
+/ `test msg 5`
+0.8.0 -> 0.9.0
+/ `test msg 6`
+0.7.7 -> 0.8.0
+/ `test msg 7`
+EXAMPLE -> EXAMPLE
+? `prompt the user for confirmation`
+/ `comment you want to print to debug`
+\ `comment you want to always show the user`
++ `id` `path to place at` `decompress true/false` `url to fetch` `alternate url 1` `alternate url 2` ... `comment`
+- `id` `path to delete` `comment`
+* `id` `path to file` `line numbers to modify` `line 1` `line 2` `line 3` ... `url alternative` `comment`
+^ `id` `path to file` `regex pattern to match` `replacement 1` `replacement 2` ... `url alternative` `comment`
