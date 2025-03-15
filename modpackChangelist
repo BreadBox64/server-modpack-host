@@ -13,6 +13,8 @@
 / `test msg 5`
 0.8.0 -> 0.9.0
 / `test msg 6`
+0.8.0 -> 0.10.0
+/ `test msg 6`
 0.7.7 -> 0.8.0
 / `test msg 7`
 EXAMPLE -> EXAMPLE
