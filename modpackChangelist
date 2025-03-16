@@ -17,11 +17,11 @@
 / `test msg 6`
 0.7.7 -> 0.8.0
 / `test msg 7`
-EXAMPLE -> EXAMPLE
-? `prompt the user for confirmation`
+> `0.10.0 -> 0.11.0`
+? `prompt the user for confirmation` id2;id4
 / `comment you want to print to debug`
 \ `comment you want to always show the user`
-+ `id` `path to place at` `decompress true/false` `url to fetch` `alternate url 1` `alternate url 2` ... `comment`
++ `id` `path to place at` `decompress true/false` `url to fetch` `alternate url 1` `alternate url 2` `comment`
 - `id` `path to delete` `comment`
-* `id` `path to file` `line numbers to modify` `line 1` `line 2` `line 3` ... `url alternative` `comment`
-^ `id` `path to file` `regex pattern to match` `replacement 1` `replacement 2` ... `url alternative` `comment`
+* `id` `path to file` 5;6;7;36;37;39 `line 1` `line 2` `line 3` `url alternative` `comment`
+^ `id` `path to file` `regex pattern to match` `replacement 1` `replacement 2` `url alternative` `comment`
