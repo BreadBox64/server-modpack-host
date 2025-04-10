@@ -1,0 +1,7 @@
+id => bannana
+name => Minecraft - Bannana Pack
+description => bannanas or smth like that
+localBranch => Stable
+localVersion => 1.0.0
+upstreamVersionURL => https://raw.githubusercontent.com/BreadBox64/server-modpack-host/refs/heads/main/version
+upstreamChangelist => https://raw.githubusercontent.com/BreadBox64/server-modpack-host/refs/heads/main/changelist
