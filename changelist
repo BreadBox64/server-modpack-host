@@ -1,0 +1,3 @@
+0.7.7 -> 1.0.0
+/ commentary `hello world!`
+\ stdouttest `this should go to stdout`
